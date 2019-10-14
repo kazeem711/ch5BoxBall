@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.geom.*;
 /**
- * Write a description of class BoxBall here.
+ *Lab 5 -  Box Ball Animation Demo
  *
  * @author Kazeem Azeez
  * @version October 12, 2019
@@ -13,7 +13,7 @@ public class BoxBall
     private int diameter;
     private int xPosition;
     private int yPosition;
-    private final int groundPosition;      // y position of ground
+    private final int groundPosition;      // y position of the ground
     private Canvas canvas;
     private int ySpeed = 1;                // initial downward speed
     private int xMove;
@@ -45,14 +45,14 @@ public class BoxBall
     /**
      * Draw this ball at its current position onto the canvas.
      **/
-    public void draw()
+    public void boxBounce()
     {
         canvas.setForegroundColor(color);
         canvas.fillCircle(xPosition, yPosition, diameter);
     }
 
     /**
-     * Erase this ball at its current position.
+     * Erase the ball at its current position.
      **/
     public void erase()
     {
@@ -60,7 +60,7 @@ public class BoxBall
     }    
 
     /**
-     * Move this ball according to its position and speed and redraw.
+     * Move the ball according to the position and speed and redraw.
      **/
     public void move()
     {
@@ -71,7 +71,7 @@ public class BoxBall
         yPosition += yMove;
         xPosition += xMove;
 
-        // check if it has hit the ground
+        // check if the ball hit the ground
         if(xPosition >= (550 - diameter) || xPosition <= 10){
             xMove = -xMove;
         }
@@ -80,11 +80,11 @@ public class BoxBall
         }
 
         // draw again at new position
-        draw();
+        boxBounce();
     }    
 
     /**
-     * return the horizontal position of this ball
+     * return the horizontal position of the ball
      */
     public int getXPosition()
     {
@@ -92,7 +92,7 @@ public class BoxBall
     }
 
     /**
-     * return the vertical position of this ball
+     * return the vertical position of the ball
      */
     public int getYPosition()
     {
