@@ -48,7 +48,7 @@ public class BallDemo
             ball.move();
             ball2.move();
             // stop once ball has travelled a certain distance on x axis
-            if(ball.getXPosition() >= 550 || ball2.getXPosition() >= 550) {
+            if(ball.getXPosition() >= 550 || ball2.getXPosition() <= 550) {
                 finished = true;
             }
         }
