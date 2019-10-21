@@ -1,17 +1,17 @@
 #BlueJ class context
 comment0.target=BoxBall
 comment0.text=\r\nLab\ 5\ -\ \ Box\ Ball\ Animation\ Demo\r\n\r\n\ @author\ Kazeem\ Azeez\r\n\ @version\ October\ 12,\ 2019\r\n
-comment1.params=xPos\ yPos\ xMove\ yMove\ ballDiameter\ ballColor\ groundPos\ drawingCanvas
-comment1.target=BoxBall(int,\ int,\ int,\ int,\ int,\ java.awt.Color,\ int,\ Canvas)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BoxBall\r\n\r\n\ @param\ xPos\ \ the\ horizontal\ coordinate\ of\ the\ ball\r\n\ @param\ yPos\ \ the\ vertical\ coordinate\ of\ the\ ball\r\n\ @param\ ballDiameter\ \ the\ diameter\ (in\ pixels)\ of\ the\ ball\r\n\ @param\ ballColor\ \ the\ color\ of\ the\ ball\r\n\ @param\ groundPos\ \ the\ position\ of\ the\ ground\ (where\ the\ wall\ will\ bounce)\r\n\ @param\ drawingCanvas\ \ the\ canvas\ to\ draw\ this\ ball\ on\r\n
+comment1.params=xPos\ yPos\ ballDiameter\ ballColor\ groundPos\ roofPos\ rightPos\ leftPos\ drawingCanvas
+comment1.target=BoxBall(int,\ int,\ int,\ java.awt.Color,\ int,\ int,\ int,\ int,\ Canvas)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BouncingBall\r\n\r\n\ @param\ xPos\ \ the\ horizontal\ coordinate\ of\ the\ ball\r\n\ @param\ yPos\ \ the\ vertical\ coordinate\ of\ the\ ball\r\n\ @param\ ballDiameter\ \ the\ diameter\ (in\ pixels)\ of\ the\ ball\r\n\ @param\ ballColor\ \ the\ color\ of\ the\ ball\r\n\ @param\ groundPos\ \ the\ position\ of\ the\ ground\ (where\ the\ wall\ will\ bounce)\r\n\ @param\ drawingCanvas\ \ the\ canvas\ to\ draw\ this\ ball\ on\r\n
 comment2.params=
-comment2.target=void\ boxBounce()
+comment2.target=void\ draw()
 comment2.text=\r\n\ Draw\ this\ ball\ at\ its\ current\ position\ onto\ the\ canvas.\r\n
 comment3.params=
 comment3.target=void\ erase()
 comment3.text=\r\n\ Erase\ the\ ball\ at\ its\ current\ position.\r\n
 comment4.params=
-comment4.target=void\ move()
+comment4.target=void\ boxBounce()
 comment4.text=\r\n\ Move\ the\ ball\ according\ to\ the\ position\ and\ speed\ and\ redraw.\r\n
 comment5.params=
 comment5.target=int\ getXPosition()
